@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vizualizimi i te dhenave</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	<script src="https://code.highcharts.com/modules/export-data.js"></script>
+</head>
+
+<body>
+<h1>Vizualizimi i te dhenave</h1>
+<div class="form-group">
+      <label for="country">Shteti</label><br>
+      <input type="text" name="country" id="country" placeholder="Shteti" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="population">Popullsia (ne milion)</label><br>
+      <input type="number" name="population" id="population" placeholder="Popullsia" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="density">Dendesia</label><br>
+      <input type="number" name="density" id="density" placeholder="Dendesia" class="form-control">
+    </div>
+    <button class="button" id="add-btn" value="Submit">Shto</button>
+    <p><i>* Te dhenat e tabeles renditen automatikisht nga vendi me numrin me te madh te popullsise</i></p>
+    <div class="container">
+      <table id="dt-table" class="display cell-border">
+        <thead>
+          <tr>
+            <th>Vendi</th>
+            <th>Popullsia (2018)</th>
+            <th>Dendesia (b/km²)</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+      <div id="container"></div>
+    </div>
+
+
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
